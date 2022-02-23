@@ -19,8 +19,8 @@ paypal.configure({
             payment_method: "paypal"
         },
         redirect_urls: {
-            return_url: `http://192.168.1.109:5000/api/paypal/success/${req.params.price}`,
-            cancel_url: "http://192.168.1.109:5000/api/paypal/cancel"
+            return_url: `https://pay-easy-server.herokuapp.com/api/paypal/success/${req.params.price}`,
+            cancel_url: "https://pay-easy-server.herokuapp.com/api/paypal/cancel"
         },
         transactions: [
             {
