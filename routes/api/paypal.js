@@ -49,7 +49,6 @@ paypal.configure({
             throw error;
         } else {
             console.log("Create Payment Response");
-            console.log(payment,'WORKEDDDDDDDDDDDDD');
             res.redirect(`${payment.links[1].href}`);
         }
     });
