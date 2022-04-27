@@ -21,6 +21,7 @@ app.get('/',(req,res)=>{
     res.send('API Running')
 })
 
+app.use('/api/stripe',require('./routes/api/stripe'))
 app.use('/api/paypal',require('./routes/api/paypal'))
 
 app.listen(PORT, ()=>{
