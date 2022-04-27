@@ -1,6 +1,6 @@
 const express = require('express')
 const router  = express.Router();
-const stripe = require('stripe')('sk_test_51HJecfDK0ioqWXMOE2jbbb4w6IGOfMHjkIzHiBjTxp8nIBzCPXEIDSoPVkQbTv1ZWYHutTVAdejGLVUN1LxpoXAJ00Vh2urg3T', { apiVersion: "2020-08-27" });
+const stripe = require('stripe')('sk_test_51Jdh7KHfmHPaQSPyEdvxhPsA8VMcSm8DIGGxueyA73M7M4tNCc8npIjxFW9flkmIvrC59ncscuyqca9NbmkIyMUR00fjyDRNKI', { apiVersion: "2020-08-27" });
 
 router.post('/stripe/payment', async (req, res) => {
 
@@ -22,7 +22,7 @@ router.post('/stripe/payment', async (req, res) => {
 
     // Send the object keys to the client
     res.send({
-        publishableKey: 'pk_test_51HJecfDK0ioqWXMOfEJ4NVSW2ITUXrOpF1wHQVZqlAmSXQuNPMEVFu03aXP5YcRHMNR2cXZlpij33mrd8nqtQVMl00AlyFoJdd', // https://stripe.com/docs/keys#obtain-api-keys
+        publishableKey: 'pk_test_51Jdh7KHfmHPaQSPyxF77evkBiqqMIHpNrwjwlqbavsk4oo3fB6au62gK4ku8nSTvEmrwPNmzjuIv0nO82NEdJ2dp009jm1jf1f', // https://stripe.com/docs/keys#obtain-api-keys
         paymentIntent: paymentIntent.client_secret,
         customer: customer.id,
         ephemeralKey: ephemeralKey.secret
@@ -88,7 +88,7 @@ router.post('/payment-sheet', async (req, res) => {
         paymentIntent: paymentIntent.client_secret,
         ephemeralKey: ephemeralKey.secret,
         customer: customer.id,
-        publishableKey: 'pk_test_51HJecfDK0ioqWXMOfEJ4NVSW2ITUXrOpF1wHQVZqlAmSXQuNPMEVFu03aXP5YcRHMNR2cXZlpij33mrd8nqtQVMl00AlyFoJdd'
+        publishableKey: 'pk_test_51Jdh7KHfmHPaQSPyxF77evkBiqqMIHpNrwjwlqbavsk4oo3fB6au62gK4ku8nSTvEmrwPNmzjuIv0nO82NEdJ2dp009jm1jf1f'
     });
 });
 
