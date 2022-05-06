@@ -1,6 +1,6 @@
 const express = require('express')
 const router  = express.Router();
-const stripe = require('stripe')('sk_test_51Jdh7KHfmHPaQSPyEdvxhPsA8VMcSm8DIGGxueyA73M7M4tNCc8npIjxFW9flkmIvrC59ncscuyqca9NbmkIyMUR00fjyDRNKI', { apiVersion: "2020-08-27" });
+const stripe = require('stripe')('sk_test_51Jdh7KHfmHPaQSPyLF5pIVXoPODhNKA3RiWAul5Fj2ahmZPvKuYaZbsMknxqL2MsmO1wzRSC0L3bACEL8YBVIBnh00jolqFAuN', { apiVersion: "2020-08-27" });
 
 router.post('/stripe/payment', async (req, res) => {
     try{
